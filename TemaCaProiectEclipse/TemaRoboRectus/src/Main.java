@@ -42,9 +42,7 @@ public class Main {
 						+ " ani, desi stim amandoi ca aceasta este doar un numar ;))))");
 
 			}
-			// inchidem scannerul
-			sc.close();
-
+			
 			// deci daca reusesti sa ajungi in acest catch sa imi zici si mie ce ai facut
 		} catch (Exception e) {
 			System.out.println(
@@ -55,7 +53,11 @@ public class Main {
 
 	// functie care se asigura ca citeste un numar si nu o culoare
 	private static int citesteVarsta(Scanner sc) {
-
+		//probabil merge mai bine cu un while in loc de schema asta lol ca nu ar da stack overflow, desiiiii cn sta sa dea stress test la baitul astaaaa
+		//while (true){
+		//	try-catch-ul din interior
+		//}
+		
 		// incercam sa dam varsta, daca nu e nr atragem atentia si incercam din nou.
 		try {
 			return Integer.parseInt(sc.nextLine());
@@ -68,3 +70,4 @@ public class Main {
 	}
 
 }
+
